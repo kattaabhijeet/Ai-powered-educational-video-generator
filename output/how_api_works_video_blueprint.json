@@ -1,0 +1,367 @@
+{
+  "topic": "how api works",
+  "total_duration": 45.0,
+  "scene_blueprints": [
+    {
+      "scene_number": 1,
+      "duration": 8.0,
+      "background_color": "#0F172A",
+      "elements": [
+        {
+          "element_type": "text",
+          "label": "API: Messenger",
+          "color": "#FFFFFF",
+          "position": {
+            "x": 0.0,
+            "y": 3.0
+          },
+          "size": {
+            "font_size": 48.0
+          },
+          "animation": "FadeIn",
+          "timing": 0.5
+        },
+        {
+          "element_type": "rectangle",
+          "label": "Client",
+          "color": "#00D4FF",
+          "position": {
+            "x": -3.0,
+            "y": 0.0
+          },
+          "size": {
+            "width": 2.5,
+            "height": 1.5
+          },
+          "animation": "FadeIn",
+          "timing": 1.0
+        },
+        {
+          "element_type": "rectangle",
+          "label": "Server",
+          "color": "#FF6B35",
+          "position": {
+            "x": 3.0,
+            "y": 0.0
+          },
+          "size": {
+            "width": 2.5,
+            "height": 1.5
+          },
+          "animation": "FadeIn",
+          "timing": 1.0
+        },
+        {
+          "element_type": "arrow",
+          "label": "API Request",
+          "color": "#FFFFFF",
+          "position": {
+            "x_start": -1.5,
+            "y_start": 0.0,
+            "x_end": 1.5,
+            "y_end": 0.0
+          },
+          "size": {},
+          "animation": "FadeIn",
+          "timing": 2.0
+        },
+        {
+          "element_type": "circle",
+          "label": "Envelope",
+          "color": "#00D4FF",
+          "position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "size": {
+            "radius": 0.4
+          },
+          "animation": "FadeIn",
+          "timing": 2.5
+        }
+      ],
+      "transitions": [
+        "FadeOut"
+      ],
+      "narration_text": "An API, or Application Programming Interface, is a messenger that lets two software systems talk to each other without sharing their inner code."
+    },
+    {
+      "scene_number": 2,
+      "duration": 10.0,
+      "background_color": "#0F172A",
+      "elements": [
+        {
+          "element_type": "text",
+          "label": "Request Structure",
+          "color": "#FFFFFF",
+          "position": {
+            "x": 0.0,
+            "y": 3.0
+          },
+          "size": {
+            "font_size": 48.0
+          },
+          "animation": "FadeIn",
+          "timing": 0.5
+        },
+        {
+          "element_type": "rectangle",
+          "label": "Client",
+          "color": "#00D4FF",
+          "position": {
+            "x": -3.0,
+            "y": 0.0
+          },
+          "size": {
+            "width": 2.5,
+            "height": 1.5
+          },
+          "animation": "FadeIn",
+          "timing": 1.0
+        },
+        {
+          "element_type": "rectangle",
+          "label": "GET /weather?city=Paris",
+          "color": "#FF6B35",
+          "position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "size": {
+            "width": 3.0,
+            "height": 2.0
+          },
+          "animation": "FadeIn",
+          "timing": 2.0
+        },
+        {
+          "element_type": "arrow",
+          "label": "API Request",
+          "color": "#FFFFFF",
+          "position": {
+            "x_start": -1.5,
+            "y_start": 0.0,
+            "x_end": -0.5,
+            "y_end": 0.0
+          },
+          "size": {},
+          "animation": "FadeIn",
+          "timing": 3.0
+        },
+        {
+          "element_type": "arrow",
+          "label": "Endpoint",
+          "color": "#FFFFFF",
+          "position": {
+            "x_start": 0.5,
+            "y_start": 0.0,
+            "x_end": 2.5,
+            "y_end": 0.0
+          },
+          "size": {},
+          "animation": "FadeIn",
+          "timing": 3.5
+        }
+      ],
+      "transitions": [
+        "FadeOut"
+      ],
+      "narration_text": "When the client needs data, it sends a request to the server through the API. The request follows a set format—like a URL, method, and optional parameters."
+    },
+    {
+      "scene_number": 3,
+      "duration": 12.0,
+      "background_color": "#0F172A",
+      "elements": [
+        {
+          "element_type": "text",
+          "label": "Server Response",
+          "color": "#FFFFFF",
+          "position": {
+            "x": 0.0,
+            "y": 3.0
+          },
+          "size": {
+            "font_size": 48.0
+          },
+          "animation": "FadeIn",
+          "timing": 0.5
+        },
+        {
+          "element_type": "rectangle",
+          "label": "Server",
+          "color": "#FF6B35",
+          "position": {
+            "x": 3.0,
+            "y": 0.0
+          },
+          "size": {
+            "width": 2.5,
+            "height": 1.5
+          },
+          "animation": "FadeIn",
+          "timing": 1.0
+        },
+        {
+          "element_type": "circle",
+          "label": "Process",
+          "color": "#00D4FF",
+          "position": {
+            "x": 3.0,
+            "y": 0.0
+          },
+          "size": {
+            "radius": 0.5
+          },
+          "animation": "FadeIn",
+          "timing": 2.0
+        },
+        {
+          "element_type": "rectangle",
+          "label": "Client",
+          "color": "#00D4FF",
+          "position": {
+            "x": -3.0,
+            "y": 0.0
+          },
+          "size": {
+            "width": 2.5,
+            "height": 1.5
+          },
+          "animation": "FadeIn",
+          "timing": 1.0
+        },
+        {
+          "element_type": "arrow",
+          "label": "Response (JSON)",
+          "color": "#FFFFFF",
+          "position": {
+            "x_start": 1.5,
+            "y_start": 0.0,
+            "x_end": -1.5,
+            "y_end": 0.0
+          },
+          "size": {},
+          "animation": "FadeIn",
+          "timing": 3.0
+        }
+      ],
+      "transitions": [
+        "FadeOut"
+      ],
+      "narration_text": "The server processes the request, fetches or computes the needed information, and sends back a response—usually in a lightweight format like JSON."
+    },
+    {
+      "scene_number": 4,
+      "duration": 15.0,
+      "background_color": "#0F172A",
+      "elements": [
+        {
+          "element_type": "text",
+          "label": "Plug‑and‑Play Integration",
+          "color": "#FFFFFF",
+          "position": {
+            "x": 0.0,
+            "y": 3.0
+          },
+          "size": {
+            "font_size": 48.0
+          },
+          "animation": "FadeIn",
+          "timing": 0.5
+        },
+        {
+          "element_type": "rectangle",
+          "label": "Apps",
+          "color": "#00D4FF",
+          "position": {
+            "x": -3.0,
+            "y": 0.0
+          },
+          "size": {
+            "width": 3.0,
+            "height": 2.0
+          },
+          "animation": "FadeIn",
+          "timing": 1.0
+        },
+        {
+          "element_type": "rectangle",
+          "label": "Server",
+          "color": "#FF6B35",
+          "position": {
+            "x": 3.0,
+            "y": 0.0
+          },
+          "size": {
+            "width": 2.5,
+            "height": 2.0
+          },
+          "animation": "FadeIn",
+          "timing": 1.0
+        },
+        {
+          "element_type": "circle",
+          "label": "Auth",
+          "color": "#00D4FF",
+          "position": {
+            "x": 3.0,
+            "y": 0.8
+          },
+          "size": {
+            "radius": 0.3
+          },
+          "animation": "FadeIn",
+          "timing": 2.0
+        },
+        {
+          "element_type": "circle",
+          "label": "Data",
+          "color": "#00D4FF",
+          "position": {
+            "x": 3.0,
+            "y": 0.0
+          },
+          "size": {
+            "radius": 0.3
+          },
+          "animation": "FadeIn",
+          "timing": 2.0
+        },
+        {
+          "element_type": "circle",
+          "label": "Analytics",
+          "color": "#00D4FF",
+          "position": {
+            "x": 3.0,
+            "y": -0.8
+          },
+          "size": {
+            "radius": 0.3
+          },
+          "animation": "FadeIn",
+          "timing": 2.0
+        },
+        {
+          "element_type": "arrow",
+          "label": "Plug",
+          "color": "#FFFFFF",
+          "position": {
+            "x_start": -0.5,
+            "y_start": 0.0,
+            "x_end": 0.5,
+            "y_end": 0.0
+          },
+          "size": {},
+          "animation": "FadeIn",
+          "timing": 3.0
+        }
+      ],
+      "transitions": [
+        "FadeOut"
+      ],
+      "narration_text": "Because the API hides the server’s inner workings, developers can build apps quickly, swapping out services without changing their own code. Think of it as a plug‑and‑play connector between apps."
+    }
+  ],
+  "style_profile": {}
+}

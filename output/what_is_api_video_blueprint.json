@@ -1,0 +1,389 @@
+{
+  "topic": "what is api",
+  "total_duration": 45.0,
+  "scene_blueprints": [
+    {
+      "scene_number": 1,
+      "duration": 8.0,
+      "background_color": "#1a1a1a",
+      "elements": [
+        {
+          "element_type": "text",
+          "label": "What is an API?",
+          "color": "#ffffff",
+          "position": {
+            "x": 0.0,
+            "y": 2.5
+          },
+          "size": {
+            "width": 6.0,
+            "height": 1.0
+          },
+          "animation": "FadeIn",
+          "timing": 0.0
+        },
+        {
+          "element_type": "rectangle",
+          "label": "App A",
+          "color": "#00d4ff",
+          "position": {
+            "x": -2.0,
+            "y": 0.0
+          },
+          "size": {
+            "width": 2.0,
+            "height": 1.5
+          },
+          "animation": "FadeIn",
+          "timing": 1.0
+        },
+        {
+          "element_type": "rectangle",
+          "label": "App B",
+          "color": "#00d4ff",
+          "position": {
+            "x": 2.0,
+            "y": 0.0
+          },
+          "size": {
+            "width": 2.0,
+            "height": 1.5
+          },
+          "animation": "FadeIn",
+          "timing": 1.0
+        },
+        {
+          "element_type": "arrow",
+          "label": "API",
+          "color": "#ff6b35",
+          "position": {
+            "x_start": -1.0,
+            "y_start": 0.0,
+            "x_end": 1.0,
+            "y_end": 0.0
+          },
+          "size": {},
+          "animation": "Write",
+          "timing": 2.5
+        },
+        {
+          "element_type": "icon",
+          "label": "Gear",
+          "color": "#ff6b35",
+          "position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "size": {
+            "width": 0.5,
+            "height": 0.5
+          },
+          "animation": "Rotate",
+          "timing": 3.5
+        }
+      ],
+      "transitions": [
+        "FadeOut"
+      ],
+      "narration_text": "An API, or Application Programming Interface, is a set of rules that lets different software talk to each other."
+    },
+    {
+      "scene_number": 2,
+      "duration": 10.0,
+      "background_color": "#1a1a1a",
+      "elements": [
+        {
+          "element_type": "icon",
+          "label": "Client",
+          "color": "#00d4ff",
+          "position": {
+            "x": -3.0,
+            "y": 0.0
+          },
+          "size": {
+            "width": 0.8,
+            "height": 0.8
+          },
+          "animation": "FadeIn",
+          "timing": 0.5
+        },
+        {
+          "element_type": "icon",
+          "label": "Server",
+          "color": "#ff6b35",
+          "position": {
+            "x": 3.0,
+            "y": 0.0
+          },
+          "size": {
+            "width": 0.8,
+            "height": 0.8
+          },
+          "animation": "FadeIn",
+          "timing": 0.5
+        },
+        {
+          "element_type": "arrow",
+          "label": "API",
+          "color": "#ff6b35",
+          "position": {
+            "x_start": -2.2,
+            "y_start": 0.0,
+            "x_end": 2.2,
+            "y_end": 0.0
+          },
+          "size": {},
+          "animation": "Write",
+          "timing": 1.5
+        },
+        {
+          "element_type": "icon",
+          "label": "Plate",
+          "color": "#ffffff",
+          "position": {
+            "x": 3.0,
+            "y": 0.0
+          },
+          "size": {
+            "width": 0.6,
+            "height": 0.6
+          },
+          "animation": "FadeIn",
+          "timing": 3.0
+        },
+        {
+          "element_type": "arrow",
+          "label": "API (return)",
+          "color": "#ff6b35",
+          "position": {
+            "x_start": 2.2,
+            "y_start": 0.0,
+            "x_end": -2.2,
+            "y_end": 0.0
+          },
+          "size": {},
+          "animation": "Write",
+          "timing": 5.0
+        }
+      ],
+      "transitions": [
+        "FadeOut"
+      ],
+      "narration_text": "Think of an API like a waiter in a restaurant. You (the client) place an order, the waiter (the API) takes it to the kitchen (the server), and brings back the dish."
+    },
+    {
+      "scene_number": 3,
+      "duration": 12.0,
+      "background_color": "#1a1a1a",
+      "elements": [
+        {
+          "element_type": "rectangle",
+          "label": "Client Request",
+          "color": "#00d4ff",
+          "position": {
+            "x": -3.0,
+            "y": 0.0
+          },
+          "size": {
+            "width": 2.5,
+            "height": 1.0
+          },
+          "animation": "FadeIn",
+          "timing": 0.5
+        },
+        {
+          "element_type": "arrow",
+          "label": "API",
+          "color": "#ff6b35",
+          "position": {
+            "x_start": -0.75,
+            "y_start": 0.0,
+            "x_end": 0.75,
+            "y_end": 0.0
+          },
+          "size": {},
+          "animation": "Write",
+          "timing": 2.0
+        },
+        {
+          "element_type": "rectangle",
+          "label": "Server",
+          "color": "#ff6b35",
+          "position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "size": {
+            "width": 3.0,
+            "height": 2.0
+          },
+          "animation": "FadeIn",
+          "timing": 2.5
+        },
+        {
+          "element_type": "icon",
+          "label": "Gear",
+          "color": "#ff6b35",
+          "position": {
+            "x": 0.0,
+            "y": 0.5
+          },
+          "size": {
+            "width": 0.6,
+            "height": 0.6
+          },
+          "animation": "Rotate",
+          "timing": 4.0
+        },
+        {
+          "element_type": "rectangle",
+          "label": "Response (JSON)",
+          "color": "#00d4ff",
+          "position": {
+            "x": 3.0,
+            "y": 0.0
+          },
+          "size": {
+            "width": 2.5,
+            "height": 1.0
+          },
+          "animation": "FadeIn",
+          "timing": 6.0
+        }
+      ],
+      "transitions": [
+        "FadeOut"
+      ],
+      "narration_text": "When the client sends a request, it follows a specific format—like a URL and parameters. The server reads that request, processes it, and sends back data in a standard format, often JSON."
+    },
+    {
+      "scene_number": 4,
+      "duration": 15.0,
+      "background_color": "#1a1a1a",
+      "elements": [
+        {
+          "element_type": "icon",
+          "label": "Google Login",
+          "color": "#00d4ff",
+          "position": {
+            "x": -4.0,
+            "y": 1.0
+          },
+          "size": {
+            "width": 0.7,
+            "height": 0.7
+          },
+          "animation": "FadeIn",
+          "timing": 0.5
+        },
+        {
+          "element_type": "icon",
+          "label": "Weather",
+          "color": "#00d4ff",
+          "position": {
+            "x": -4.0,
+            "y": 0.0
+          },
+          "size": {
+            "width": 0.7,
+            "height": 0.7
+          },
+          "animation": "FadeIn",
+          "timing": 1.0
+        },
+        {
+          "element_type": "icon",
+          "label": "Twitter",
+          "color": "#00d4ff",
+          "position": {
+            "x": -4.0,
+            "y": -1.0
+          },
+          "size": {
+            "width": 0.7,
+            "height": 0.7
+          },
+          "animation": "FadeIn",
+          "timing": 1.5
+        },
+        {
+          "element_type": "rectangle",
+          "label": "API Hub",
+          "color": "#ff6b35",
+          "position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "size": {
+            "width": 2.5,
+            "height": 2.0
+          },
+          "animation": "FadeIn",
+          "timing": 2.0
+        },
+        {
+          "element_type": "arrow",
+          "label": "API",
+          "color": "#ff6b35",
+          "position": {
+            "x_start": -3.3,
+            "y_start": 1.0,
+            "x_end": -0.75,
+            "y_end": 0.5
+          },
+          "size": {},
+          "animation": "Write",
+          "timing": 2.5
+        },
+        {
+          "element_type": "arrow",
+          "label": "API",
+          "color": "#ff6b35",
+          "position": {
+            "x_start": -3.3,
+            "y_start": 0.0,
+            "x_end": -0.75,
+            "y_end": 0.0
+          },
+          "size": {},
+          "animation": "Write",
+          "timing": 3.0
+        },
+        {
+          "element_type": "arrow",
+          "label": "API",
+          "color": "#ff6b35",
+          "position": {
+            "x_start": -3.3,
+            "y_start": -1.0,
+            "x_end": -0.75,
+            "y_end": -0.5
+          },
+          "size": {},
+          "animation": "Write",
+          "timing": 3.5
+        },
+        {
+          "element_type": "text",
+          "label": "APIs power the connected world",
+          "color": "#00d4ff",
+          "position": {
+            "x": 0.0,
+            "y": -2.5
+          },
+          "size": {
+            "width": 8.0,
+            "height": 1.0
+          },
+          "animation": "FadeIn",
+          "timing": 12.0
+        }
+      ],
+      "transitions": [
+        "FadeOut"
+      ],
+      "narration_text": "APIs let apps reuse functionality without rebuilding it. Whether it’s logging in with Google, pulling weather data, or posting a tweet, the same API rules make integration fast and reliable."
+    }
+  ],
+  "style_profile": {}
+}

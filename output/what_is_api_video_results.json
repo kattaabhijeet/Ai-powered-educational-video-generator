@@ -1,0 +1,18 @@
+{
+  "topic": "what is api",
+  "script": "output\\what_is_api_video_script.json",
+  "blueprint": "output\\what_is_api_video_blueprint.json",
+  "audio_files": [
+    "output\\what_is_api_video_audio\\scene_1_narration.mp3",
+    "output\\what_is_api_video_audio\\scene_2_narration.mp3",
+    "output\\what_is_api_video_audio\\scene_3_narration.mp3",
+    "output\\what_is_api_video_audio\\scene_4_narration.mp3"
+  ],
+  "video": "output\\what_is_api_video.mp4",
+  "scene_files": [
+    "output\\scene_1.png",
+    "output\\scene_2.png",
+    "output\\scene_3.png",
+    "output\\scene_4.png"
+  ]
+}

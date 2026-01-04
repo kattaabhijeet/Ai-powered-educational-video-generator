@@ -1,0 +1,53 @@
+{
+  "topic": "How DNS works",
+  "total_duration": 45.0,
+  "scenes": [
+    {
+      "scene_number": 1,
+      "duration": 8.0,
+      "narration": "When you type a website address, your computer needs to translate that human‑readable name into an IP address. This translation is done by the Domain Name System, or DNS – the phone book of the internet.",
+      "visual_description": "Dark background. A cyan rectangle labeled \"User Device\" with a text bubble showing \"www.example.com\". An orange arrow points from the device to a larger orange rectangle titled \"DNS Resolver\". Minimalist icons and a subtle pulse effect on the arrow.",
+      "key_concepts": [
+        "Domain name",
+        "IP address",
+        "DNS as translation service"
+      ]
+    },
+    {
+      "scene_number": 2,
+      "duration": 12.0,
+      "narration": "Your device first asks its local DNS resolver – often provided by your ISP – \"Do you know the IP for www.example.com?\" If the resolver doesn’t have it cached, it starts a chain of queries, moving up the hierarchy.",
+      "visual_description": "Zoom into the orange \"DNS Resolver\" rectangle. Inside, a cyan sub‑rectangle labeled \"Cache\" flashes red (empty). An orange arrow leaves the resolver toward a cyan circle labeled \"Root Server\". Dashed orange arrows continue to an orange rectangle \"TLD Server (.com)\" and then to another orange rectangle \"Authoritative Server\".",
+      "key_concepts": [
+        "Recursive resolver",
+        "Caching",
+        "Query hierarchy"
+      ]
+    },
+    {
+      "scene_number": 3,
+      "duration": 12.0,
+      "narration": "The resolver first contacts a root server, which points it to the .com top‑level domain server. The TLD server then directs the resolver to the authoritative server that holds the exact record for example.com.",
+      "visual_description": "Flowchart animation: orange arrow from \"Root Server\" to \"TLD Server (.com)\" to \"Authoritative Server\". Each server is a orange rectangle with a small cyan label indicating its role. Arrows are labeled \"referral\". A brief highlight effect shows the path being followed.",
+      "key_concepts": [
+        "Root server",
+        "TLD server",
+        "Authoritative server",
+        "Referral response"
+      ]
+    },
+    {
+      "scene_number": 4,
+      "duration": 13.0,
+      "narration": "The authoritative server finally returns the IP address, e.g., 93.184.216.34, back through the resolver to your device. The resolver stores this answer in its cache for future requests, making the next lookup faster.",
+      "visual_description": "Reverse flow: orange arrow from \"Authoritative Server\" back to \"DNS Resolver\" (now showing a cyan cache icon with a green checkmark). Then an orange arrow from the resolver to the \"User Device\" cyan rectangle, which now displays the IP address. A small timer icon appears next to the cache to indicate TTL (time‑to‑live).",
+      "key_concepts": [
+        "Authoritative answer",
+        "Response path",
+        "Caching for speed",
+        "TTL"
+      ]
+    }
+  ],
+  "style_notes": null
+}

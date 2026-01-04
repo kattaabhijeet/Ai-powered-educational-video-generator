@@ -1,0 +1,49 @@
+{
+  "topic": "what is api",
+  "total_duration": 45.0,
+  "scenes": [
+    {
+      "scene_number": 1,
+      "duration": 8.0,
+      "narration": "An API, or Application Programming Interface, is a set of rules that lets different software talk to each other.",
+      "visual_description": "Dark background. Centered title \"What is an API?\" appears in white. Below, a simple diagram shows two rectangles labeled \"App A\" (cyan) and \"App B\" (cyan) with a dotted line labeled \"API\" (orange) connecting them. Small icons of gears turn as the line glows, indicating communication.",
+      "key_concepts": [
+        "API definition",
+        "software communication"
+      ]
+    },
+    {
+      "scene_number": 2,
+      "duration": 10.0,
+      "narration": "Think of an API like a waiter in a restaurant. You (the client) place an order, the waiter (the API) takes it to the kitchen (the server), and brings back the dish.",
+      "visual_description": "Split-screen: left side shows a cyan-colored user icon (client) holding a menu; right side shows an orange kitchen icon (server). A stylized orange arrow labeled \"API\" moves from the client to the server, then returns with a plate. Minimalist icons, dark backdrop, subtle cyan and orange highlights.",
+      "key_concepts": [
+        "client‑server analogy",
+        "request‑response cycle"
+      ]
+    },
+    {
+      "scene_number": 3,
+      "duration": 12.0,
+      "narration": "When the client sends a request, it follows a specific format—like a URL and parameters. The server reads that request, processes it, and sends back data in a standard format, often JSON.",
+      "visual_description": "Flowchart: a cyan rectangle labeled \"Client Request\" points via an orange arrow to a larger orange rectangle labeled \"Server\". Inside the server box, a tiny gear spins and outputs a cyan rectangle labeled \"Response (JSON)\". Each element appears with a brief highlight as the narration mentions it.",
+      "key_concepts": [
+        "request format",
+        "response format",
+        "JSON"
+      ]
+    },
+    {
+      "scene_number": 4,
+      "duration": 15.0,
+      "narration": "APIs let apps reuse functionality without rebuilding it. Whether it’s logging in with Google, pulling weather data, or posting a tweet, the same API rules make integration fast and reliable.",
+      "visual_description": "Three mini‑scenes appear side‑by‑side: (1) a cyan smartphone icon with a Google logo, (2) a cyan cloud icon with a weather symbol, (3) a cyan bird icon for Twitter. Each connects via orange arrows to a central orange server box labeled \"API Hub\". The arrows pulse, showing data flow. The final frame fades to the text \"APIs power the connected world\" in cyan.",
+      "key_concepts": [
+        "reusability",
+        "integration examples",
+        "standardized access"
+      ]
+    }
+  ],
+  "style_notes": null
+}

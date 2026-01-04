@@ -1,0 +1,13 @@
+{
+  "topic": "How DNS works",
+  "script": "output\\how_dns_works_video_script.json",
+  "blueprint": "output\\how_dns_works_video_blueprint.json",
+  "audio_files": [
+    "output\\how_dns_works_video_audio\\scene_1_narration.mp3",
+    "output\\how_dns_works_video_audio\\scene_2_narration.mp3",
+    "output\\how_dns_works_video_audio\\scene_3_narration.mp3",
+    "output\\how_dns_works_video_audio\\scene_4_narration.mp3"
+  ],
+  "video": "output\\how_dns_works_video.mp4",
+  "scene_files": []
+}

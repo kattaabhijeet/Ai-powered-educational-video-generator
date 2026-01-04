@@ -1,0 +1,431 @@
+{
+  "topic": "How DNS works",
+  "total_duration": 45.0,
+  "scene_blueprints": [
+    {
+      "scene_number": 1,
+      "duration": 8.0,
+      "background_color": "#1a1a1a",
+      "elements": [
+        {
+          "element_type": "text",
+          "label": "Title",
+          "color": "#ffffff",
+          "position": {
+            "x": 0.0,
+            "y": 2.5
+          },
+          "size": {
+            "width": 6.0,
+            "height": 0.8
+          },
+          "animation": "FadeIn",
+          "timing": 0.0
+        },
+        {
+          "element_type": "rectangle",
+          "label": "Your Computer",
+          "color": "#00d4ff",
+          "position": {
+            "x": -3.0,
+            "y": 0.0
+          },
+          "size": {
+            "width": 2.0,
+            "height": 1.5
+          },
+          "animation": "FadeIn",
+          "timing": 0.5
+        },
+        {
+          "element_type": "text",
+          "label": "Computer Query",
+          "color": "#ffffff",
+          "position": {
+            "x": -3.0,
+            "y": 0.8
+          },
+          "size": {
+            "width": 1.8,
+            "height": 0.4
+          },
+          "animation": "FadeIn",
+          "timing": 0.7
+        },
+        {
+          "element_type": "rectangle",
+          "label": "DNS",
+          "color": "#ff6b35",
+          "position": {
+            "x": 3.0,
+            "y": 0.0
+          },
+          "size": {
+            "width": 2.0,
+            "height": 1.5
+          },
+          "animation": "FadeIn",
+          "timing": 1.0
+        },
+        {
+          "element_type": "arrow",
+          "label": "Request",
+          "color": "#00d4ff",
+          "position": {
+            "x_start": -1.0,
+            "y_start": 0.0,
+            "x_end": 1.0,
+            "y_end": 0.0
+          },
+          "size": {},
+          "animation": "Write",
+          "timing": 1.5
+        }
+      ],
+      "transitions": [
+        "FadeOut"
+      ],
+      "narration_text": "When you type a website address, your computer needs to translate that human‑readable name into an IP address. This translation is done by the Domain Name System, or DNS – the phonebook of the internet."
+    },
+    {
+      "scene_number": 2,
+      "duration": 10.0,
+      "background_color": "#1a1a1a",
+      "elements": [
+        {
+          "element_type": "rectangle",
+          "label": "Your Computer",
+          "color": "#00d4ff",
+          "position": {
+            "x": -4.0,
+            "y": 0.0
+          },
+          "size": {
+            "width": 2.0,
+            "height": 1.5
+          },
+          "animation": "FadeIn",
+          "timing": 0.0
+        },
+        {
+          "element_type": "arrow",
+          "label": "Request to Resolver",
+          "color": "#00d4ff",
+          "position": {
+            "x_start": -2.0,
+            "y_start": 0.0,
+            "x_end": 0.0,
+            "y_end": 0.0
+          },
+          "size": {},
+          "animation": "Write",
+          "timing": 0.5
+        },
+        {
+          "element_type": "rectangle",
+          "label": "Local Resolver",
+          "color": "#00d4ff",
+          "position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "size": {
+            "width": 2.0,
+            "height": 1.5
+          },
+          "animation": "FadeIn",
+          "timing": 1.0
+        },
+        {
+          "element_type": "text",
+          "label": "Cache Miss",
+          "color": "#ff6b35",
+          "position": {
+            "x": 0.0,
+            "y": 0.8
+          },
+          "size": {
+            "width": 1.6,
+            "height": 0.4
+          },
+          "animation": "FadeIn",
+          "timing": 1.5
+        },
+        {
+          "element_type": "arrow",
+          "label": "Forward to Root",
+          "color": "#ff6b35",
+          "position": {
+            "x_start": 1.0,
+            "y_start": 0.0,
+            "x_end": 3.0,
+            "y_end": 0.0
+          },
+          "size": {},
+          "animation": "Write",
+          "timing": 2.0
+        },
+        {
+          "element_type": "rectangle",
+          "label": "Root Server",
+          "color": "#ff6b35",
+          "position": {
+            "x": 4.0,
+            "y": 0.0
+          },
+          "size": {
+            "width": 2.0,
+            "height": 1.5
+          },
+          "animation": "FadeIn",
+          "timing": 2.5
+        }
+      ],
+      "transitions": [
+        "FadeOut"
+      ],
+      "narration_text": "First, your computer asks its local DNS resolver – usually provided by your ISP or home router. If the resolver already knows the answer, it replies instantly. Most of the time, it has to look it up."
+    },
+    {
+      "scene_number": 3,
+      "duration": 15.0,
+      "background_color": "#1a1a1a",
+      "elements": [
+        {
+          "element_type": "rectangle",
+          "label": "Root Server",
+          "color": "#ff6b35",
+          "position": {
+            "x": -2.0,
+            "y": 1.0
+          },
+          "size": {
+            "width": 2.0,
+            "height": 1.5
+          },
+          "animation": "FadeIn",
+          "timing": 0.0
+        },
+        {
+          "element_type": "arrow",
+          "label": "Root → TLD",
+          "color": "#ff6b35",
+          "position": {
+            "x_start": -1.0,
+            "y_start": 1.0,
+            "x_end": 1.0,
+            "y_end": 1.0
+          },
+          "size": {},
+          "animation": "Write",
+          "timing": 0.5
+        },
+        {
+          "element_type": "rectangle",
+          "label": "TLD (.com) Server",
+          "color": "#ff6b35",
+          "position": {
+            "x": 2.0,
+            "y": 1.0
+          },
+          "size": {
+            "width": 2.5,
+            "height": 1.5
+          },
+          "animation": "FadeIn",
+          "timing": 1.0
+        },
+        {
+          "element_type": "arrow",
+          "label": "TLD → Auth",
+          "color": "#ff6b35",
+          "position": {
+            "x_start": 3.5,
+            "y_start": 1.0,
+            "x_end": 5.5,
+            "y_end": 1.0
+          },
+          "size": {},
+          "animation": "Write",
+          "timing": 1.5
+        },
+        {
+          "element_type": "rectangle",
+          "label": "Authoritative Server",
+          "color": "#ff6b35",
+          "position": {
+            "x": 6.5,
+            "y": 1.0
+          },
+          "size": {
+            "width": 3.0,
+            "height": 1.5
+          },
+          "animation": "FadeIn",
+          "timing": 2.0
+        },
+        {
+          "element_type": "arrow",
+          "label": "Response (IP)",
+          "color": "#00d4ff",
+          "position": {
+            "x_start": 5.5,
+            "y_start": 1.0,
+            "x_end": -1.0,
+            "y_end": -0.5
+          },
+          "size": {},
+          "animation": "Write",
+          "timing": 2.5
+        },
+        {
+          "element_type": "text",
+          "label": "IP Address",
+          "color": "#ffffff",
+          "position": {
+            "x": -1.0,
+            "y": -0.5
+          },
+          "size": {
+            "width": 2.0,
+            "height": 0.4
+          },
+          "animation": "FadeIn",
+          "timing": 3.0
+        },
+        {
+          "element_type": "rectangle",
+          "label": "Your Computer",
+          "color": "#00d4ff",
+          "position": {
+            "x": -4.0,
+            "y": -0.5
+          },
+          "size": {
+            "width": 2.0,
+            "height": 1.5
+          },
+          "animation": "FadeIn",
+          "timing": 3.5
+        }
+      ],
+      "transitions": [
+        "FadeOut"
+      ],
+      "narration_text": "The resolver follows a chain of servers. It asks the root server, which points to the top‑level domain (TLD) server for \".com\". The TLD server then points to the authoritative server that holds the exact IP for \"example.com\". Each step is a simple lookup, like climbing a ladder."
+    },
+    {
+      "scene_number": 4,
+      "duration": 12.0,
+      "background_color": "#1a1a1a",
+      "elements": [
+        {
+          "element_type": "rectangle",
+          "label": "Authoritative Server",
+          "color": "#ff6b35",
+          "position": {
+            "x": 4.0,
+            "y": 0.0
+          },
+          "size": {
+            "width": 3.0,
+            "height": 1.5
+          },
+          "animation": "FadeIn",
+          "timing": 0.0
+        },
+        {
+          "element_type": "arrow",
+          "label": "IP to Resolver",
+          "color": "#ff6b35",
+          "position": {
+            "x_start": 2.5,
+            "y_start": 0.0,
+            "x_end": 0.0,
+            "y_end": 0.0
+          },
+          "size": {},
+          "animation": "Write",
+          "timing": 0.5
+        },
+        {
+          "element_type": "rectangle",
+          "label": "Local Resolver",
+          "color": "#00d4ff",
+          "position": {
+            "x": -2.0,
+            "y": 0.0
+          },
+          "size": {
+            "width": 2.0,
+            "height": 1.5
+          },
+          "animation": "FadeIn",
+          "timing": 1.0
+        },
+        {
+          "element_type": "circle",
+          "label": "Cache Icon",
+          "color": "#00d4ff",
+          "position": {
+            "x": -2.0,
+            "y": -0.8
+          },
+          "size": {
+            "radius": 0.2
+          },
+          "animation": "FadeIn",
+          "timing": 1.5
+        },
+        {
+          "element_type": "arrow",
+          "label": "IP to Computer",
+          "color": "#00d4ff",
+          "position": {
+            "x_start": -1.0,
+            "y_start": 0.0,
+            "x_end": -4.0,
+            "y_end": 0.0
+          },
+          "size": {},
+          "animation": "Write",
+          "timing": 2.0
+        },
+        {
+          "element_type": "rectangle",
+          "label": "Your Computer",
+          "color": "#00d4ff",
+          "position": {
+            "x": -6.0,
+            "y": 0.0
+          },
+          "size": {
+            "width": 2.0,
+            "height": 1.5
+          },
+          "animation": "FadeIn",
+          "timing": 2.5
+        },
+        {
+          "element_type": "circle",
+          "label": "Globe Icon",
+          "color": "#ffffff",
+          "position": {
+            "x": -6.0,
+            "y": 0.8
+          },
+          "size": {
+            "radius": 0.3
+          },
+          "animation": "FadeIn",
+          "timing": 3.0
+        }
+      ],
+      "transitions": [
+        "FadeOut"
+      ],
+      "narration_text": "Finally, the authoritative server returns the IP address to the resolver, which caches it for future requests and sends it back to your computer. Your browser can now connect directly to the website."
+    }
+  ],
+  "style_profile": {}
+}

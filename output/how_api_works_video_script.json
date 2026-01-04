@@ -1,0 +1,50 @@
+{
+  "topic": "how api works",
+  "total_duration": 45.0,
+  "scenes": [
+    {
+      "scene_number": 1,
+      "duration": 8.0,
+      "narration": "An API, or Application Programming Interface, is a messenger that lets two software systems talk to each other without sharing their inner code.",
+      "visual_description": "Dark background. A cyan-colored rectangle labeled \"Client\" on the left, an orange rectangle labeled \"Server\" on the right. A simple arrow labeled \"API Request\" moves from client to server, with a small envelope icon in the middle. Minimalist icons and clean typography.",
+      "key_concepts": [
+        "API definition",
+        "Client‑Server communication"
+      ]
+    },
+    {
+      "scene_number": 2,
+      "duration": 10.0,
+      "narration": "When the client needs data, it sends a request to the server through the API. The request follows a set format—like a URL, method, and optional parameters.",
+      "visual_description": "Zoom into the cyan client rectangle. Inside, a small cyan circle labeled \"Request\" appears, showing a URL bar (e.g., \"GET /weather?city=Paris\"). An orange arrow points to the server rectangle, turning into a stylized orange circle labeled \"Endpoint\". Flowchart boxes illustrate \"Method\", \"URL\", \"Parameters\" with cyan connectors.",
+      "key_concepts": [
+        "API request structure",
+        "Endpoints",
+        "HTTP methods"
+      ]
+    },
+    {
+      "scene_number": 3,
+      "duration": 12.0,
+      "narration": "The server processes the request, fetches or computes the needed information, and sends back a response—usually in a lightweight format like JSON.",
+      "visual_description": "Inside the orange server rectangle, an orange circle labeled \"Process\" lights up, then a green checkmark appears. An orange arrow returns to the client, turning into a cyan circle labeled \"Response\" containing a tiny JSON snippet (e.g., {\"temp\":15}). The flowchart shows a bidirectional loop with arrows labeled \"Request\" and \"Response\".",
+      "key_concepts": [
+        "Server processing",
+        "Response format",
+        "JSON"
+      ]
+    },
+    {
+      "scene_number": 4,
+      "duration": 15.0,
+      "narration": "Because the API hides the server’s inner workings, developers can build apps quickly, swapping out services without changing their own code. Think of it as a plug‑and‑play connector between apps.",
+      "visual_description": "A series of cyan client rectangles stacked vertically, each connected by orange arrows to the same orange server rectangle. The server shows interchangeable puzzle pieces labeled \"Auth\", \"Data\", \"Analytics\" that can be swapped. A final overlay shows a simple plug icon connecting client to server, reinforcing the plug‑and‑play metaphor.",
+      "key_concepts": [
+        "Abstraction",
+        "Modularity",
+        "Plug‑and‑play integration"
+      ]
+    }
+  ],
+  "style_notes": null
+}
